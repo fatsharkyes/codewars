@@ -493,3 +493,54 @@
 
 // console.log(mergeArrays(arr1, arr2))
 
+
+/**
+ * Remove a element from the string
+ * 
+ * 
+// const str = "happiness"
+
+// const func = (str) => {
+// 	const arr = str.split('')
+// 	arr.shift()
+// 	arr.pop()
+// 	return arr.join('')
+// }
+
+// console.log(func(str))
+
+*/
+
+
+/**
+ * Opposite numbers
+ */
+
+// const nmb = 3
+
+// const f = (n) => {
+// 	return n = -n
+// }
+
+// console.log(f(nmb))
+
+
+/**
+ * Like vs Dislikes
+ */
+
+const ytb = (...args) => {
+	let res
+	args.forEach(el => {
+
+		if (el === 'like') {
+			res = el
+		}
+		if (el === 'dislike') {
+			res = el
+		}
+	})
+	return res
+}
+
+console.log(ytb('dislike', 'like'))

@@ -529,18 +529,34 @@
  * Like vs Dislikes
  */
 
-const ytb = (...args) => {
+const likeOrDislike = (args) => {
 	let res
-	args.forEach(el => {
 
-		if (el === 'like') {
-			res = el
+	if (args.length === 0) {
+		res = 'Nothing'
+	}
+
+	args.reduce((acc, el) => {
+		if (acc === el) {
+			return res = 'Nothing'
 		}
-		if (el === 'dislike') {
-			res = el
+
+		if (el === 'Dislike') {
+			return res = 'Dislike'
 		}
-	})
+
+		if (el === 'Like') {
+			return res = 'Like'
+		}
+
+	}, 0)
+
 	return res
 }
 
-console.log(ytb('dislike', 'like'))
+
+// OR
+
+const ytb = (buttons) => buttons.reduce((p, c) => c === p ? "Nothing" : c,"Nothing")
+
+console.log(likeOrDislike([]))

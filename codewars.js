@@ -584,12 +584,30 @@
 
 // OR
 
-function switcheroo(x) {
-	return x.replace(/[ab]/g, func => 
-		func === 'a'
-			? 'b'
-			: 'a'
-	)
+// function switcheroo(x) {
+// 	return x.replace(/[a-b]/g, func => 
+// 		func === 'a'
+// 			? 'b'
+// 			: 'a'
+// 	)
+// }
+
+// console.log(switcheroo("aaacbbbb"))
+
+
+/**
+ * Shortest word
+ */
+const str = "bitcoin take over the world maybe who knows perhaps"
+
+const findShort = (str) => {
+	let res
+	let arr = str.split(" ")
+	arr.forEach((el) => {
+		console.log(Math.min(el.length))
+		res = Math.min(el.length)
+	})
+	return res
 }
 
-console.log(switcheroo("aaacbbbb"))
+console.log(findShort(str))

@@ -529,34 +529,67 @@
  * Like vs Dislikes
  */
 
-const likeOrDislike = (args) => {
-	let res
+// const likeOrDislike = (args) => {
+// 	let res
 
-	if (args.length === 0) {
-		res = 'Nothing'
-	}
+// 	if (args.length === 0) {
+// 		res = 'Nothing'
+// 	}
 
-	args.reduce((acc, el) => {
-		if (acc === el) {
-			return res = 'Nothing'
-		}
+// 	args.reduce((acc, el) => {
+// 		if (acc === el) {
+// 			return res = 'Nothing'
+// 		}
 
-		if (el === 'Dislike') {
-			return res = 'Dislike'
-		}
+// 		if (el === 'Dislike') {
+// 			return res = 'Dislike'
+// 		}
 
-		if (el === 'Like') {
-			return res = 'Like'
-		}
+// 		if (el === 'Like') {
+// 			return res = 'Like'
+// 		}
 
-	}, 0)
+// 	}, 0)
 
-	return res
-}
+// 	return res
+// }
+
+
+// // OR
+
+// const ytb = (buttons) => buttons.reduce((p, c) => c === p ? "Nothing" : c,"Nothing")
+
+// console.log(likeOrDislike([]))
+
+
+/**
+ * switch letters in string
+ */
+
+//  function switcheroo(x){
+// 	const b = []
+// 	const a = x.split('')
+// 	a.forEach(el => {
+// 		el === 'a'
+// 			? b.push(el = 'b')
+// 			: el === 'b'
+// 				? b.push(el = 'a')
+// 				: b.push(el)
+// 	})
+// 	return b.join('')
+// }
+
+// console.log(switcheroo("aaacbbbb"))
 
 
 // OR
 
-const ytb = (buttons) => buttons.reduce((p, c) => c === p ? "Nothing" : c,"Nothing")
+function switcheroo(x) {
+	return x.replace(/[ab]/g, func => 
+		func === 'a'
+			? 'b'
+			: 'a'
+	)
+}
 
-console.log(likeOrDislike([]))
+console.log(switcheroo("aaacbbbb"))

@@ -598,16 +598,64 @@
 /**
  * Shortest word
  */
-const str = "bitcoin take over the world maybe who knows perhaps"
+const str = "Let's travel abroad shall webitcoin take over the world maybe who knows perhaps"
+
+// const findShort = (str) => {
+// 	let arr = str.split(" ")
+// 	let res = Infinity
+// 	for (let i = 0; i < arr.length; i++) {
+// 	  if (arr[i].length < res) {
+// 		 res = arr[i].length
+// 	  }
+// 	}
+// 	return res
+//  }
+
+// console.log(findShort(str))
+
+// // OR
+
+// const findShort = (str) => {
+// 	let arr = str.split(" ")
+// 	return arr.reduce((acc, el) => {
+// 		return Math.min(acc, el.length)
+// 	}, Infinity)
+// }
+
+// console.log(findShort(str))
+
+// // OR
+
+// const findShort = (str) => {
+// 	let arr = str.split(" ")
+// 	return arr.map(a => a.length)
+// 		.reduce((acc, el) => {
+// 			return Math.min(acc, el)
+// 		})
+	
+// }
+
+// console.log(findShort(str))
+
+// OR
+
+// const findShort = (str) => {
+// 	let arr = str.split(" ")
+// 	let res = arr[0]
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i].length < res.length) {
+// 			res = arr[i]
+// 		}
+// 	}
+// 	return res.length
+// }
+
+// console.log(findShort(str))
+
+//OR
 
 const findShort = (str) => {
-	let res
-	let arr = str.split(" ")
-	arr.forEach((el) => {
-		console.log(Math.min(el.length))
-		res = Math.min(el.length)
-	})
-	return res
+	return Math.min(...str.split(" ").map(a => a.length))
 }
 
 console.log(findShort(str))

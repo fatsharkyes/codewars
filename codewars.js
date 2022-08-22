@@ -683,3 +683,95 @@
 //     return count
 // }
 
+
+
+/**
+ * remove vowels
+ */
+
+//  const text = "This website is for losers LOL!"
+
+//  const disemvowel = text => {
+//      const vawels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+//      const newArr = []
+//      const arr = text.split('')
+//      arr.forEach(el => {
+//          if(vawels.includes(el)) {
+//              return
+             
+//          } else {
+//              newArr.push(el)
+//          }
+//      })
+//      return newArr.join('')
+//  }
+ 
+//  const disemvowel = text => {
+//      const vowels = text.match(/[aeiou]/gi)
+//      return text.split('').reduce((a, b) => {
+//          if (vowels.includes(b)) {
+//              true
+//          } else {
+//              a.push(b)
+//          }
+//          return a
+//      }, []).join('')
+//  }
+ 
+//  const disemvowel = text => {
+//      const vowels = text.match(/[aeiuo]/gi)
+//      const arr = text.split('')
+//      const newArr = []
+//      for (let i = 0; i < arr.length; i++) {
+//          vowels.includes(arr[i]) ? true : newArr.push(arr[i])
+//      }
+//      return newArr.join('')
+//  }
+ 
+// const disemvowel = (text) => {
+//   return text.replace(/[aeiou]/gi, '');
+// }
+
+//  console.log(a(text))
+
+
+
+ /**
+  * Square every digit
+  */
+
+//  const number = 9119
+
+//  const squareDigits = number => {
+//     const str = number.toString()
+//     const arr = str.split('')
+//     const newArr = []
+//     for (let i of arr) {
+//         newArr.push(i * i)
+//     }
+//     return Number(newArr.join(''))
+//  }
+
+// const squareDigits = number => {
+//     return number.toString().match(/[1-9]/gi).map(a => {
+//         a = Number(a)
+//         return a * a
+        
+//     }).join('')
+// }
+
+//  console.log(fn(number))
+
+
+
+/**
+ * Descending Order
+ */
+
+// const numbers = 145263
+
+// const descendingOrder = num => {
+//     return num.toString().split('').sort((a, b) => b - a).map(a => a = Number(a)).join('')
+// }
+
+// console.log(fn(numbers))

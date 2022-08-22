@@ -598,7 +598,7 @@
 /**
  * Shortest word
  */
-const str = "Let's travel abroad shall webitcoin take over the world maybe who knows perhaps"
+// const str = "Let's travel abroad shall webitcoin take over the world maybe who knows perhaps"
 
 // const findShort = (str) => {
 // 	let arr = str.split(" ")
@@ -654,8 +654,32 @@ const str = "Let's travel abroad shall webitcoin take over the world maybe who k
 
 //OR
 
-const findShort = (str) => {
-	return Math.min(...str.split(" ").map(a => a.length))
-}
+// const findShort = (str) => {
+// 	return Math.min(...str.split(" ").map(a => a.length))
+// }
 
-console.log(findShort(str))
+// console.log(findShort(str))
+
+
+
+/**
+ * Count vowels
+ */
+
+// const a = "hello my name is ilya and i'm a student but i study at home"
+
+// const getCount = (str) => {
+//     let res = 0
+//     let arr = str.split("")
+//     arr.forEach(a => a === 'a' ? res += 1 : a === 'e' ? res += 1 : a === 'o' ? res += 1 : a === 'u' ? res += 1 : a === 'i' ? res += 1 : true)
+//     return res
+// }
+
+// console.log(getCount(a))
+
+// const getCount = str => {
+//     let count = str.match(/[aeiou]/gi).length
+//     console.log(str.length)
+//     return count
+// }
+

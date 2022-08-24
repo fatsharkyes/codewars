@@ -833,3 +833,32 @@
 
 
 // console.log(highAndLow("1 2 3 4 5"))
+
+
+/**
+ * You're a square!
+ */
+
+// const isSquare = (n) => {
+//   return n % Math.sqrt(n) === 0
+//     ? true
+//     : Math.sqrt(n) === 0
+//       ? true
+//       : false
+// }
+
+//a bit improvement
+
+// const isSquare = (n) => {
+//   return Math.sqrt(n) % 1 === 0
+//     ? true
+//     : false
+// }
+
+//OR
+
+// const isSquare = n => {
+//   return Math.sqrt(n) % 1 === 0
+// }
+
+// console.log(isSquare(25))

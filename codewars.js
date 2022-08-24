@@ -632,7 +632,7 @@
 // 		.reduce((acc, el) => {
 // 			return Math.min(acc, el)
 // 		})
-	
+
 // }
 
 // console.log(findShort(str))
@@ -698,14 +698,14 @@
 //      arr.forEach(el => {
 //          if(vawels.includes(el)) {
 //              return
-             
+
 //          } else {
 //              newArr.push(el)
 //          }
 //      })
 //      return newArr.join('')
 //  }
- 
+
 //  const disemvowel = text => {
 //      const vowels = text.match(/[aeiou]/gi)
 //      return text.split('').reduce((a, b) => {
@@ -717,7 +717,7 @@
 //          return a
 //      }, []).join('')
 //  }
- 
+
 //  const disemvowel = text => {
 //      const vowels = text.match(/[aeiuo]/gi)
 //      const arr = text.split('')
@@ -727,7 +727,7 @@
 //      }
 //      return newArr.join('')
 //  }
- 
+
 // const disemvowel = (text) => {
 //   return text.replace(/[aeiou]/gi, '');
 // }
@@ -736,9 +736,9 @@
 
 
 
- /**
-  * Square every digit
-  */
+/**
+ * Square every digit
+ */
 
 //  const number = 9119
 
@@ -756,7 +756,7 @@
 //     return number.toString().match(/[1-9]/gi).map(a => {
 //         a = Number(a)
 //         return a * a
-        
+
 //     }).join('')
 // }
 
@@ -775,3 +775,48 @@
 // }
 
 // console.log(fn(numbers))
+
+
+
+/**
+ * Get the Middle Character
+ */
+const word = "test"
+
+const getMiddle = word => {
+  // const newArr = []
+  // let arr = word.split('')
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (i === Math.floor(arr.length / 2)) {
+  //     newArr.push(arr[i])
+  //   }
+  // }
+  // return newArr.join('')
+  return word.slice()
+
+}
+  
+
+console.log(getMiddle(word))
+
+
+
+/**
+ * Highest and Lowest
+ */
+
+const highAndLow = numbers => {
+  const arr = numbers.split(" ")
+  return [Math.max(...arr), Math.min(...arr)].join(" ")
+}
+
+//OR
+
+// const highAndLow = numbers => {
+//   const arr = numbers.split(" ")
+//   arr.sort((a, b) => b - a)
+//   return [arr[0], arr.pop()].join(" ")
+// }
+
+
+console.log(highAndLow("1 2 3 4 5"))

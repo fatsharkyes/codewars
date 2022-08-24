@@ -781,23 +781,37 @@
 /**
  * Get the Middle Character
  */
-const word = "test"
+// const word = "test"
 
-const getMiddle = word => {
-  // const newArr = []
-  // let arr = word.split('')
-  // for (let i = 0; i < arr.length; i++) {
-  //   if (i === Math.floor(arr.length / 2)) {
-  //     newArr.push(arr[i])
-  //   }
-  // }
-  // return newArr.join('')
-  return word.slice()
+// const getMiddle = word => {
+//   const newArr = []
+//   const arr = word.split('')
+//   if (arr.length % 2 === 0) {
+//     newArr.push(arr[arr.length / 2 - 1])
+//     newArr.push(arr[arr.length / 2])
+//   }
+//   if (arr.length % 2 !== 0) {
+//     newArr.push(arr[Math.floor(arr.length / 2)])
+//   }
+//   return newArr.join('')
+// }
 
-}
-  
+//OR
 
-console.log(getMiddle(word))
+// const getMiddle = word => {
+//   return word.substring(Math.ceil(word.length/2)-1, Math.floor(word.length/2)+1)
+// }
+
+//OR
+
+// const getMiddle = word => {
+//   const middle = word.length / 2
+//   return word.length % 2 === 0
+//     ? word.slice(middle - 1, middle + 1)
+//     : word.slice(middle, middle + 1)
+// }
+
+// console.log(getMiddle(word))
 
 
 
@@ -805,12 +819,11 @@ console.log(getMiddle(word))
  * Highest and Lowest
  */
 
-const highAndLow = numbers => {
-  const arr = numbers.split(" ")
-  return [Math.max(...arr), Math.min(...arr)].join(" ")
-}
+// const highAndLow = numbers => {
+//   return [Math.max(...numbers.split(" ")), Math.min(...numbers.split(" "))].join(" ")
+// }
 
-//OR
+// //OR
 
 // const highAndLow = numbers => {
 //   const arr = numbers.split(" ")
@@ -819,4 +832,4 @@ const highAndLow = numbers => {
 // }
 
 
-console.log(highAndLow("1 2 3 4 5"))
+// console.log(highAndLow("1 2 3 4 5"))

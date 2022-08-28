@@ -862,3 +862,51 @@
 // }
 
 // console.log(isSquare(25))
+
+
+/**
+ * Mumbling
+ */
+
+// const accum = s => {
+//   const arr = s.split('')
+//   const newArr = []
+//   let value = 1
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = -1; j < arr.length; j++) {
+//       if (j < i) {
+//         newArr.push(arr[i])
+//         if (arr[i] === arr[i].toUpperCase()) {
+//           newArr.push(arr[i].toLowerCase())
+//         }
+//       }
+//     }
+//   }
+//   return newArr.join('-')
+// }
+
+// console.log(accum("ZpglnRxqenU"))
+
+
+/**
+ * List Filtering
+ */
+
+// const filter_list = list => {
+//   return list.filter(a => a === Number(a))
+// }
+
+// console.log(filter_list([1,2,'a','b']))
+
+
+/**
+ * isIsogram
+ */
+
+const isIsogram = str => {
+  const arr = str.toLowerCase().split('')
+  const newArr = arr.filter((el, index) => arr.indexOf(el) !== index)
+  return newArr.length >= 1 ? false : true
+}
+
+console.log(isIsogram('moose'))

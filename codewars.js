@@ -903,10 +903,41 @@
  * isIsogram
  */
 
-const isIsogram = str => {
-  const arr = str.toLowerCase().split('')
-  const newArr = arr.filter((el, index) => arr.indexOf(el) !== index)
-  return newArr.length >= 1 ? false : true
-}
+// const isIsogram = str => {
+//   const arr = str.toLowerCase().split('')
+//   const newArr = arr.filter((el, index) => arr.indexOf(el) !== index)
+//   return newArr.length >= 1 ? false : true
+// }
 
-console.log(isIsogram('moose'))
+//OR
+
+// const isIsogram = str => {
+//   return new Set(str.toUpperCase()).size === str.length;
+// }
+
+//Or
+// const isIsogram = str => {
+//   return !str.match(/([a-z]).*\1/i);
+// }
+
+// console.log(isIsogram('moose'))
+
+
+/**
+ * Jaden Casing Strings
+ */
+
+// const upFirstEl = (str) => {
+//   return str.split(' ').map((a) => {
+//     return a[0].toUpperCase() + a.slice(1)
+//   }).join(' ')
+// //a.charAt(0)
+// }
+
+//OR 
+
+// const upFirstEl = (str) => {
+//   return str.replace(/(^|\s)\w/g, a => a.toUpperCase())
+// }
+
+// console.log(upFirstEl("How can mirrors be real if our eyes aren't real"))

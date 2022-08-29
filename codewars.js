@@ -972,3 +972,53 @@
 // }
 
 // console.log(DNAStrand("ATTGC"))
+
+
+/**
+ * Credit Card Mask
+ */
+
+// const maskify = (cc) => {
+// 	const arr = [...cc]
+// 	const v = arr.length - 4
+// 	return [...cc].map((a, b) => {
+// 		return b >= v ? a : a = '#'
+// 	}).join('')
+// }
+
+//or
+
+// const maskify = (cc) => {
+// 	return cc.slice(0, -4).replace(/./gi, '#') + cc.slice(-4)
+// }
+
+//or
+
+// const maskify = (cc) => {
+// 	return cc.replace(/.(?=....)/g, '#')
+// }
+
+//or
+
+// const maskify = (cc) => {
+// 	return cc.slice(-4).padStart(cc.length, '#')
+// }
+
+//or
+
+// const maskify = (cc) => {
+// 	const x = cc.length - 4
+// 	return x > 0 ? new Array(x + 1).join('#') + cc.slice(x) : cc
+// }
+
+//or
+
+// const maskify = (cc) => {
+// 	return [...cc].reduce((a, b, c) => {
+// 		return c < cc.length - 4 ? a + '#' : a + b
+// 	}, '')
+// }
+
+
+
+// console.log(maskify('1111111111111111'))

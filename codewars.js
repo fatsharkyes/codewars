@@ -327,7 +327,7 @@
 // 	console.log(value)
 // })
 
-// const getData = (url) => 
+// const getData = (url) =>
 // 	new Promise((resolve, reject) =>
 // 		fetch(url)
 // 			.then(response => response.json())
@@ -458,7 +458,7 @@
 // 	for (let i = 1; i <= n; i++)
 // 		arr.push(x * i)
 // 	return arr
-// } 
+// }
 
 //  console.log(multiples(2, 5));
 
@@ -496,8 +496,8 @@
 
 /**
  * Remove a element from the string
- * 
- * 
+ *
+ *
 // const str = "happiness"
 
 // const func = (str) => {
@@ -585,7 +585,7 @@
 // OR
 
 // function switcheroo(x) {
-// 	return x.replace(/[a-b]/g, func => 
+// 	return x.replace(/[a-b]/g, func =>
 // 		func === 'a'
 // 			? 'b'
 // 			: 'a'
@@ -871,18 +871,26 @@
 // const accum = s => {
 //   const arr = s.split('')
 //   const newArr = []
-//   let value = 1
 //   for (let i = 0; i < arr.length; i++) {
-//     for (let j = -1; j < arr.length; j++) {
-//       if (j < i) {
-//         newArr.push(arr[i])
-//         if (arr[i] === arr[i].toUpperCase()) {
-//           newArr.push(arr[i].toLowerCase())
-//         }
-//       }
-//     }
+// 	newArr.push(arr[i].toUpperCase() + arr[i].toLowerCase().repeat(i))
 //   }
 //   return newArr.join('-')
+// }
+
+// const accum = s => {
+// 	return s.split('').map((a, b) => {
+// 		return a.toUpperCase() + a.toLowerCase().repeat(b)
+// 	}).join('-')
+// }
+
+//OR (without arr)
+
+// const accum = s => {
+// 	let str = ''
+// 	for (let i = 0; i < s.length; i++) {
+// 		str += s[i].toUpperCase() + s[i].toLowerCase().repeat(i) + (i < s.length - 1 ? '-' : '')
+// 	}
+// 	return str
 // }
 
 // console.log(accum("ZpglnRxqenU"))
@@ -934,7 +942,7 @@
 // //a.charAt(0)
 // }
 
-//OR 
+//OR
 
 // const upFirstEl = (str) => {
 //   return str.replace(/(^|\s)\w/g, a => a.toUpperCase())

@@ -949,3 +949,26 @@
 // }
 
 // console.log(upFirstEl("How can mirrors be real if our eyes aren't real"))
+
+
+/**
+ * Complementary DNA
+ */
+
+// const DNAStrand = dna => {
+// 	return dna.replace(/\w/gi, a => a === "A" ? a = "T" : a === "G" ? a = "C" : a === "T" ? a = "A" : a === "C" ? a = 'G' : true)
+// }
+
+//OR
+
+// const DNAStrand = dna => {
+// 	DNAStrand.pairs = {
+// 		A: 'T',
+// 		T: 'A',
+// 		C: 'G',
+// 		G: 'C'
+// 	}
+// 	return dna.replace(/./g, a => DNAStrand.pairs[a])	
+// }
+
+// console.log(DNAStrand("ATTGC"))

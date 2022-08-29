@@ -1019,6 +1019,71 @@
 // 	}, '')
 // }
 
-
-
 // console.log(maskify('1111111111111111'))
+
+
+/**
+ * Exes and Ohs
+ */
+
+// const XO = (str) => {
+// 	let x = 0
+// 	let o = 0
+// 	str.toLowerCase().split('').forEach(a => {
+// 		a === 'x' ? x++ : a === "o" ? o++ : true
+// 	})
+// 	return x === o ? true : false
+// }
+
+//or
+
+// const XO = (str) => {
+// 	let x = str.match(/x/g).length
+// 	let o = str.match(/o/g).length
+// 	return x === o ? true : false
+// }
+
+//or
+
+// const XO = (str) => {
+// 	return str = str.toLowerCase(), str.split('o').length === str.split('x').length 
+// }
+
+// console.log(XO('ooxx'))
+
+
+/**
+ * Beginner Series #3 Sum of Numbers
+ */
+
+// const getSum = (a, b) => {
+// 	let c 
+// 	let x
+// 	for (let i = 0; i < b; i++) {
+// 		// console.log(i)
+// 		c =+ i
+// 	}
+// 	return c
+// }
+
+
+// console.log(getSum(-359 ,130))
+
+
+/**
+ * Two to One
+ */
+
+// const longest = (s1, s2) => {
+// 	const arr = [...s1, ...s2].sort()
+// 	return [...new Set(arr)].join('')
+// }
+
+// const longest = (s1, s2) => {
+// 	return s1.concat(s2)
+// 		.split('')
+// 		.sort()
+// 		.filter((x, i, a) => x !== a[i-1])
+// 		.join('')
+// }
+// console.log(longest("aretheyhere", "yestheyarehere"))

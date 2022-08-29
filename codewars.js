@@ -1057,17 +1057,30 @@
  */
 
 // const getSum = (a, b) => {
-// 	let c 
-// 	let x
-// 	for (let i = 0; i < b; i++) {
-// 		// console.log(i)
-// 		c =+ i
-// 	}
-// 	return c
+// 	const min = Math.min(a, b)
+// 	const	max = Math.max(a, b)
+// 	return (max + min) * (max - min + 1) / 2
 // }
 
+//or
 
-// console.log(getSum(-359 ,130))
+// const getSum = (a, b) => {
+// 	return (Math.abs(a - b) + 1) * (a + b) / 2
+// }
+
+//or
+
+// const getSum = (a, b) => {
+// 	const min = a > b ? b : a
+// 	const max = a < b ? b : a
+// 	let res = 0
+// 	for (let i = min; i <= max; i++) {
+// 		res += i
+// 	}
+// 	return res
+// }
+
+// console.log(getSum(-94, -29))
 
 
 /**

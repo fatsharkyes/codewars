@@ -1100,3 +1100,41 @@
 // 		.join('')
 // }
 // console.log(longest("aretheyhere", "yestheyarehere"))
+
+
+/**
+ * Multiples of 3 or 5
+ */
+
+// const solution = (number) => {
+// 	if (number < 0) {
+// 		return 0
+// 	}
+// 	let a = []
+// 	let b = []
+// 	let res
+// 	for (let i = 0; i < number; i++) {
+// 		if (i % 3 == 0) {
+// 			a.push(i)
+// 		}
+// 		if (i % 5 == 0) {
+// 			b.push(i)
+// 		}
+// 	}
+// 	res = [...new Set(a.concat(b))].reduce((a, b) => a + b, 0)
+// 	return res
+// }
+
+//or
+
+// const solution = (number) => {
+// 	let res = 0
+// 	for (let i = 0; i < number; i++) {
+// 		if (i % 3 == 0 || i % 5 == 0) {
+// 			res += i
+// 		}
+// 	}
+// 	return res
+// }
+
+// console.log(solution(20))

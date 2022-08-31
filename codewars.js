@@ -1138,3 +1138,22 @@
 // }
 
 // console.log(solution(20))
+
+
+/**
+ * Stop gninnipS My sdroW!
+ */
+
+// const spinWords = (string) => {
+// 	return string.split(' ').map((a, b) => {
+// 		return a.length >= 5 ? a.split('').reverse().join('') : a
+// 	}).join(' ')
+// }
+
+//or 
+
+// const spinWords = (string) => {
+// 	return string.replace(/[\w{5,}]/gi, a => a.split('').reverse('').join(''))
+// }
+
+console.log(spinWords("Hey fellow warriors"))

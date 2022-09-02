@@ -968,7 +968,7 @@
 // 		C: 'G',
 // 		G: 'C'
 // 	}
-// 	return dna.replace(/./g, a => DNAStrand.pairs[a])	
+// 	return dna.replace(/./g, a => DNAStrand.pairs[a])
 // }
 
 // console.log(DNAStrand("ATTGC"))
@@ -1046,7 +1046,7 @@
 //or
 
 // const XO = (str) => {
-// 	return str = str.toLowerCase(), str.split('o').length === str.split('x').length 
+// 	return str = str.toLowerCase(), str.split('o').length === str.split('x').length
 // }
 
 // console.log(XO('ooxx'))
@@ -1150,10 +1150,70 @@
 // 	}).join(' ')
 // }
 
-//or 
+//or
 
 // const spinWords = (string) => {
 // 	return string.replace(/[\w{5,}]/gi, a => a.split('').reverse('').join(''))
 // }
 
-console.log(spinWords("Hey fellow warriors"))
+// console.log(spinWords("Hey fellow warriors"))
+
+
+/**
+ * Find the odd int
+ */
+
+// const findOdd = (A) => {
+// 	let p = [...A]
+// 	let o = A[0]
+// 	let n = 0
+// 	A.forEach((a, b) => A.indexOf(a) === b) ? n++ : true
+// 	return n
+// }
+
+
+// console.log(findOdd([5,4,3,2,1,5,4,3,2,10,10]))
+
+/**
+ * Sum of Digits / Digital Root
+ */
+
+// const digitalRoot = (n) => {
+// 	const str = n.toString()
+// 	const arr = str.split('')
+// 	let newArr = arr.map(a => {
+// 		return a = Number(a)
+// 	}).reduce((a, b) => a + b).toString().split('')
+
+// 	do {
+// 		newArr = newArr.map(a => a = Number(a)).reduce((a, b) => a + b).toString().split('')
+// 	} while (newArr.length > 1)
+// 	return Number(newArr.join(''))
+// }
+
+//or
+
+// function digitalRoot(n) {
+// 	const r = n.toString().split("").reduce((a, b) => a + +b, 0);
+// 	return r < 10 ? r : digitalRoot(r);
+// }
+
+//or
+
+// const digitalRoot = (n) => {
+// 	return (n - 1) % 9 + 1
+// }
+
+//or
+
+// const digitalRoot = (n) => {
+// 	if (n < 10) {
+// 		return n
+// 	}
+
+// 	return digitalRoot (
+// 		n.toString().split('').reduce((a, b) => a + +b, 0))
+// }
+
+
+// console.log(digitalRoot(493193))

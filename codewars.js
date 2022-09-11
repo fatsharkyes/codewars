@@ -1217,3 +1217,19 @@
 
 
 // console.log(digitalRoot(493193))
+
+/**
+ * Array.diff
+ */
+
+// function arrayDiff(a, b) {
+// 	let arr = []
+// 	a.forEach(el => b.includes(el) ? true : arr.push(el))
+// 	return arr
+// }
+
+// function arrayDiff(a, b) {
+// 	return a.filter(el => !b.includes(el))
+// }
+
+// console.log(arrayDiff([1,2,2], []))

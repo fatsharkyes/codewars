@@ -1164,13 +1164,15 @@
  */
 
 // const findOdd = (A) => {
-// 	let p = [...A]
-// 	let o = A[0]
-// 	let n = 0
-// 	A.forEach((a, b) => A.indexOf(a) === b) ? n++ : true
-// 	return n
+// 	let sum = 0
+// 	let s = A[0]
+// 	A.reduce((a, b) => {
+// 		if (a == b) {
+// 			return a
+// 		}
+// 	})
+// 	return sum
 // }
-
 
 // console.log(findOdd([5,4,3,2,1,5,4,3,2,10,10]))
 
@@ -1232,4 +1234,32 @@
 // 	return a.filter(el => !b.includes(el))
 // }
 
-// console.log(arrayDiff([1,2,2], []))
+// console.log(arrayDiff([1,2,2], []))]
+
+
+/**
+ * Who likes it?
+ */
+
+// function likes(names) {
+// 	return `${names.length == 1 ? `${names[0]} likes this` : `${names.length == 2 ? `${names[0]} and ${names[1]} like this` : `${names.length == 3 ? `${names[0]}, ${names[1]} and ${names[2]} like this` : `${names.length == 0 ? "no one likes this" : `${names[0]}, ${names[1]} and ${names.length - 2} others like this`}`}`}`}`
+// }
+
+//or
+
+function likes(names) {
+	switch(names.length) {
+		case 0:
+			return "no one likes this"
+		case 1:
+			return `${names[0]} likes this`
+		case 2:
+			return `${names[0]} and ${names[1]} like this`
+		case 3:
+			return `${names[0]}, ${names[1]} and ${names[2]} like this`
+		default:
+			return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
+	}
+}
+
+console.log(likes(['John', 'John', 'John', 'John']))

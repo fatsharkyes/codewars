@@ -1247,19 +1247,62 @@
 
 //or
 
-function likes(names) {
-	switch(names.length) {
-		case 0:
-			return "no one likes this"
-		case 1:
-			return `${names[0]} likes this`
-		case 2:
-			return `${names[0]} and ${names[1]} like this`
-		case 3:
-			return `${names[0]}, ${names[1]} and ${names[2]} like this`
-		default:
-			return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
-	}
-}
+// function likes(names) {
+// 	switch(names.length) {
+// 		case 0:
+// 			return "no one likes this"
+// 		case 1:
+// 			return `${names[0]} likes this`
+// 		case 2:
+// 			return `${names[0]} and ${names[1]} like this`
+// 		case 3:
+// 			return `${names[0]}, ${names[1]} and ${names[2]} like this`
+// 		default:
+// 			return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
+// 	}
+// }
 
-console.log(likes(['John', 'John', 'John', 'John']))
+// console.log(likes(['John', 'John', 'John', 'John']))
+
+/**
+ * Which color is the brightest?
+ */
+
+// function brightest(colors){
+//   const arr1 = [...colors[0]]
+//   arr1.shift()
+//   const arr2 = [...colors[1]]
+//   arr2.shift()
+//   if (colors.length > 2) {
+// 	return colors[0]
+//   } else {
+// 	return colors[0]
+//   }
+// }
+
+// console.log(brightest(["#FFFFFF", "#123456"]))
+
+/**
+ * Digits explosion
+ */
+
+// function explode(s) {
+// 	const arr = s.replace(/\w/g, a => a === "0" ? a = "" : a).split('').map((a, b) => {
+// 		return a + a.repeat(a - 1)
+// 	}).join('')
+// 	return arr
+// }
+
+//or
+
+// function explode(s) {
+// 	return s.split('').map(a => a.repeat(+a)).join('')
+// }
+
+//or
+
+// function explode(s) {
+// 	return s.replace(/\d/g, a => a.repeat(a))
+// }
+
+// console.log(explode("1210022"))
